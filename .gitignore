@@ -1,0 +1,18 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template
+.DS_Store
+_book
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+target
+
+### Java template
+.settings
+.project
+.classpath
+*.class
+application-local.properties
+

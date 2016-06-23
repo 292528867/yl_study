@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新增评论</title>
+    <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
+    <link rel="stylesheet" href="assets/css/admin.css"/>
+    <link rel="stylesheet" href="resources/css/article_list_userinfo.css"/>
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+</head>
+<body>
+
+<div class="am-container" style="max-width: 99% !important;">
+    <form action="" class="am-form" data-am-validator>
+        <fieldset>
+            <legend>新增评论</legend>
+            <div class="am-form-group">
+                <input type="hidden" id="articleId" name="articleId"/>
+            </div>
+            <div class="am-form-group">
+                <label for="doc-vld-name-2">文章名称：</label>
+                <input type="text" id="doc-vld-name-2" minlength="3" required/>
+            </div>
+
+            <div class="am-form-group">
+                <label for="fromUserId">评论者：</label>
+                <input type="text" id="fromUserId" minlength="3" required/>
+            </div>
+
+            <div class="am-form-group">
+                <label for="content">评论：</label>
+                <textarea id="content" minlength="10" maxlength="100" name="content"></textarea>
+            </div>
+            <button class="am-btn am-btn-secondary" type="submit" id="submitComment" onclick="commentArticle()">提交
+            </button>
+        </fieldset>
+    </form>
+</div>
+<script src="h5/js/comment.js"></script>
+<script src="h5/js/common.js"></script>
+</body>
+</html>

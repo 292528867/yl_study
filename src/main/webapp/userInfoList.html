@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>用户管理</title>
+    <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
+    <link rel="stylesheet" href="assets/css/admin.css"/>
+    <link rel="stylesheet" href="resources/css/article_list_userinfo.css"/>
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+</head>
+<body>
+<div class="am-container" style="max-width: 99% !important;">
+    <span class="am-icon-search"></span>
+
+    <div class="am-slider-content">
+
+        <div class="am-input-group am-fl search-margin">
+            <label for="nickName" class="control-label" style="height: 40px">用户名：</label>
+            <input type="text" class="form-control" style="height: 40px;width: 120px" id="nickName"/>
+        </div>
+        <div class="am-input-group am-fl search-margin">
+            <label for="telephone" class="control-label" style="height: 40px">手机号：</label>
+            <input type="text" class="form-control" style="height: 40px" id="telephone"/>
+        </div>
+        <!--<div class="am-input-group am-fl  am-datepicker-date search-margin" data-am-datepicker="{format: 'dd-mm-yyyy'}">-->
+        <!--<input type="text" id="article-created-date" class="am-form-field form-control am-fr" placeholder="发布时间"-->
+        <!--data-am-datepicker readonly/>-->
+        <!--</div>-->
+        <button type="button" class="am-btn search-margin" id="search" onclick="searchUser($('#telephone').val(),$('#nickName').val())">
+            <span class="am-icon-search"></span>
+            搜索
+        </button>
+    </div>
+    <div class="am-u-sm-12" style="overflow: auto">
+        <table class="am-table am-table-striped am-table-hover table-main am-scrollable-horizontal">
+            <thead>
+            <tr>
+                <th></th>
+                <th>ID</th>
+                <th>昵称</th>
+                <th>手机号码</th>
+                <th>注册时间</th>
+                <th>注册邮箱</th>
+                <th>状态(孕妈/宝妈)</th>
+                <th>宝宝性别</th>
+                <th>等级</th>
+                <th>所在城市</th>
+                <th>地址</th>
+                <!--<th>操作</th>-->
+            </tr>
+            </thead>
+
+            <tbody id="user-data">
+            <!--<td>1</td>-->
+            <!--<td>Amaze UI</td>-->
+            <!--<td>http://amazeui.org</td>-->
+            <!--<td>2012-10-01</td>-->
+            </tbody>
+        </table>
+        <div class="am-cf" >
+            <div  style="text-align: center">
+                <ul id="page" data-am-widget="pagination" class="am-pagination am-pagination-default " style="margin: auto;text-align: center;" >
+                    <!--<li class="am-disabled"><a href="#">«</a></li>-->
+                    <!--<li class="am-active"><a href="#">1</a></li>-->
+                    <!--<li><a href="#">2</a></li>-->
+                    <!--<li><a> href="#">3</a></li>-->
+                    <!--<li><a href="#">4</a></li>-->
+                    <!--<li><a href="#">5</a></li>-->
+                    <!--<li><a href="#">»</a></li>-->
+                </ul>
+                <span>共<label id="total"></label>条记录</span>
+            </div>
+
+
+        </div>
+        <hr/>
+        <div id="pageDiv" class="am-u-sm-12 am-cf">
+        </div>
+    </div>
+</div>
+<script src="h5/js/common.js"></script>
+<script src="h5/js/userInfoList.js"></script>
+</body>
+</html>

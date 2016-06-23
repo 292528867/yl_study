@@ -1,0 +1,47 @@
+.article-author {
+    padding: .4rem !important;
+}
+
+.article-author button {
+    /*background: rgba(22, 220, 255, 0.13);*/
+    color: #0e90d2;
+}
+
+.portrait {
+    height: 100px;
+}
+
+.portrait-img {
+    height: 100px;
+    width: 100px;
+}
+
+.author-content {
+    margin: 40px;
+}
+
+.am-modal-dialog {
+    background: #f9f9f9;
+}
+
+.author-content div {
+
+    margin: 5px 0px;
+}
+
+.am-dropdown button {
+    width: 100px;
+}
+
+#article-created-date {
+    width: 120px;
+}
+
+.search-margin {
+    margin-left: 5px !important;
+    height: 40px
+}
+
+.options {
+    color: #0e90d2;
+}

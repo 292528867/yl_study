@@ -1,0 +1,95 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.am-container {
+    background-color: #FFFFFF;
+    height: 100%;
+}
+
+.article-title {
+    text-align: center;
+}
+
+.admin-main {
+    padding: 20px;
+    /*height: 110%;*/
+}
+
+#category {
+    height: 2em;
+    padding: 0px 10px;
+}
+
+.article-description {
+    margin: 10px 0px;
+}
+
+.article-tags {
+    margin: 10px;
+}
+
+.am-list-item {
+    margin: 10px;
+    padding: 5px 20px;
+}
+
+.am-list-item label {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.tags-title {
+    margin: 10px;
+}
+
+.activity-group {
+    float: left;
+    margin: 0px 20px;
+}
+
+.activity-group .am-dropdown, #products-group .am-dropdown {
+    margin: 0px 50px;
+}
+
+#activity {
+    margin: 0px 40px;
+}
+
+.img-size {
+    width: 98%;
+    height: 98%;
+}
+
+.tags-property {
+    font-size: 1.1em;
+    height: 35px;
+}
+
+.point {
+    margin-left: 20px;
+}
+
+.am-cf {
+   margin: 20px;
+}
+
+.tags {
+    margin-top: 2px;
+}
+
+.tags-url {
+    margin: 5px;
+    /*height: 35px;*/
+}
+
+.commit {
+    position: fixed;
+    right: 20%;
+    bottom: 10%;
+}
+
+.article-images {
+    margin: 10px 0px;
+}

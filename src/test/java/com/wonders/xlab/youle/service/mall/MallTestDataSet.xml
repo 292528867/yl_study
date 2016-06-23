@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+	<!-- 商城商品表 HC_MALL_PRODUCT 的测试数据 -->
+	<HC_MALL_PRODUCT id="1" NAME="商品名称1" SUMMARY="商品简介1" ORIGINALPRICE="60.0" CURRENTPRICE="50.0" 
+		PICTUREURL="商品图片" PICTUREURLLIST="商品图片列表" DESC="商品图文描述html" 
+		CATEGORY="测试类别" 
+		CREATEDDATE="2015-08-12 12:01:01" LASTMODIFIEDDATE="2015-08-12 12:01:01"
+	/>
+</dataset>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <title>有了宝贝下载</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .main {
+            display: block;
+            overflow: hidden;
+            margin: 0 auto;
+            max-width: 414px;
+            background: url("img/background1.png") center top no-repeat;
+            background-size: 100%;
+        }
+
+        @media all and (min-width: 425px) {
+            .main {
+                margin-top: 50px;
+            }
+        }
+
+        .container {
+            display: block;
+            margin-top: 114%;
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 414px;
+        }
+
+        .content {
+            display: block;
+            margin: 0 auto;
+            width: 88%;
+            padding-left: 6px;
+        }
+
+        .content > img {
+            display: block;
+            margin: 0 auto 15px;
+            width: 120px;
+        }
+
+        .download {
+            display: block;
+            margin: 0 auto;
+            height: 95px;
+            width: 95px;
+            cursor: pointer;
+        }
+
+        .btn-android {
+            display: block;
+            margin: 0 auto;
+            height: 40px;
+            width: 113.5px;
+            border: none;
+            background: url("./img/download.png") center top no-repeat;
+            background-size: contain;
+            cursor: pointer;
+        }
+
+        a:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body bgcolor="#ffe883">
+<div class="main">
+    <section class="container">
+        <div class="content" id="browser">
+            <img src="img/icon-android@2x.png">
+            <a class="btn-android" href="http://dwz.cn/28ej5O"></a>
+        </div>
+    </section>
+</div>
+</body>
+</html>

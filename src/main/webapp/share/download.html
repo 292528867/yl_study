@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <title>有了宝贝下载</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .main {
+            display: block;
+            overflow: hidden;
+            margin: 0 auto;
+            max-width: 414px;
+            background: url("./img/background.png") center top no-repeat;
+            background-size: 100%;
+        }
+
+        .container {
+            display: block;
+            margin-top: 133%;
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 414px;
+        }
+
+        .content {
+            display: block;
+            margin: 0 auto;
+            width: 88%;
+            padding-left: 6px;
+        }
+
+        .left {
+            display: inline-block;
+            width: 49%;
+        }
+
+        .right {
+            display: inline-block;
+            width: 49%;
+        }
+
+        .download {
+            display: block;
+            margin: 0 auto;
+            height: 95px;
+            width: 95px;
+            cursor: pointer;
+        }
+
+        .btn-iso {
+            display: block;
+            margin: 0 auto;
+            height: 40px;
+            width: 113.5px;
+            border: none;
+            background: url("./img/btn_iso.png") center top no-repeat;
+            background-size: contain;
+            cursor: pointer;
+        }
+
+        .btn-android {
+            display: block;
+            margin: 0 auto;
+            height: 40px;
+            width: 113.5px;
+            border: none;
+            background: url("./img/btn_android.png") center top no-repeat;
+            background-size: contain;
+            cursor: pointer;
+        }
+
+        a:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body bgcolor="#ffe883">
+<div class="main">
+    <section class="container">
+        <div class="content" id="weixin">
+            <figure class="left">
+                <img class="download" src="./img/ios@2x.png"/>
+            </figure>
+            <figure class="right">
+                <!--<img class="download" src="img/android@2x-apk.png"/>-->
+                <img class="download" src="img/android@2x-html.png"/>
+            </figure>
+        </div>
+        <div class="content" id="browser" style="display: none">
+            <div class="left">
+                <a class="btn-iso" href="https://itunes.apple.com/cn/app/you-le-bao-bei/id1044176093?mt=8"></a>
+            </div>
+            <div class="right">
+                <a class="btn-android" href="http://101.231.124.8:45698/youle-download/android-1.0.apk"></a>
+            </div>
+        </div>
+    </section>
+</div>
+<script>
+    isWeiXin();
+    function isWeiXin() {
+        var ua = window.navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+            return true;
+        } else {
+            document.getElementById("weixin").style.display = "none";
+            document.getElementById("browser").style.display = "block";
+            return false;
+        }
+    }
+</script>
+</body>
+</html>

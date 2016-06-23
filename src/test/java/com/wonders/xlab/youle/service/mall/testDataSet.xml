@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+	<!-- 测试的表HC_TEST_DOMAIN的数据 -->
+	<HC_TEST_DOMAIN id="1" TESTNAME1="tn1" TESTNAME2="tn2" TESTNAME3="tn3" TESTNAME4="tn4" TESTNAME5="tn5" TESTNAME6="tn6" />
+</dataset>
